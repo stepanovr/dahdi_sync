@@ -1,0 +1,12 @@
+The driver sync_timer provides syncronization for an asterisk+dahdi system.
+Before building kernel dahdi sourses should be installed on the system to the
+/usr/src/ and compiled. Complete path to dahdi sources is
+/usr/src/dahdi-linux-complete<dahdi source version>
+
+To build driver execute command as user root:
+make DAHDI_DIR=/usr/src/dahdi-linux-complete<dahdi source version>
+
+Install:
+make install
+
+

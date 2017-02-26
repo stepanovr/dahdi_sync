@@ -1,0 +1,6 @@
+git clone --bare sys_timer sys_timer.git
+sudo make DAHDI_DIR=/usr/src/dahdi-linux-complete-2.10.2-rc1+2.10.2-rc1
+
+before building privide: 
+cp -f $(DAHDI_DIR)/linux/drivers/dahdi/Module.symvers .
+
